@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		CA5F65D2243D6245005D22D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F65D1243D6245005D22D5 /* AppDelegate.swift */; };
 		CA5F65D4243D6245005D22D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F65D3243D6245005D22D5 /* SceneDelegate.swift */; };
-		CA5F65D6243D6245005D22D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F65D5243D6245005D22D5 /* ViewController.swift */; };
 		CA5F65D9243D6245005D22D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5F65D7243D6245005D22D5 /* Main.storyboard */; };
 		CA5F65DB243D624E005D22D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5F65DA243D624E005D22D5 /* Assets.xcassets */; };
 		CA5F65DE243D624E005D22D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5F65DC243D624E005D22D5 /* LaunchScreen.storyboard */; };
+		CA5F65E6243D6B82005D22D5 /* ColorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F65E5243D6B82005D22D5 /* ColorsTableViewController.swift */; };
+		CA5F65E8243D6BE2005D22D5 /* ColorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5F65E7243D6BE1005D22D5 /* ColorDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA5F65CE243D6245005D22D5 /* Rainbow (iOSPT6).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rainbow (iOSPT6).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5F65D1243D6245005D22D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA5F65D3243D6245005D22D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA5F65D5243D6245005D22D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CA5F65D8243D6245005D22D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA5F65DA243D624E005D22D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA5F65DD243D624E005D22D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA5F65DF243D624E005D22D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA5F65E5243D6B82005D22D5 /* ColorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTableViewController.swift; sourceTree = "<group>"; };
+		CA5F65E7243D6BE1005D22D5 /* ColorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		CA5F65D0243D6245005D22D5 /* Rainbow (iOSPT6) */ = {
 			isa = PBXGroup;
 			children = (
-				CA5F65D1243D6245005D22D5 /* AppDelegate.swift */,
-				CA5F65D3243D6245005D22D5 /* SceneDelegate.swift */,
-				CA5F65D5243D6245005D22D5 /* ViewController.swift */,
-				CA5F65D7243D6245005D22D5 /* Main.storyboard */,
-				CA5F65DA243D624E005D22D5 /* Assets.xcassets */,
-				CA5F65DC243D624E005D22D5 /* LaunchScreen.storyboard */,
+				CA5F65EB243D6CF4005D22D5 /* View Controllers */,
+				CA5F65E9243D6CE3005D22D5 /* Model */,
+				CA5F65EA243D6CED005D22D5 /* Views */,
+				CA5F65EC243D6D36005D22D5 /* Resources */,
 				CA5F65DF243D624E005D22D5 /* Info.plist */,
 			);
 			path = "Rainbow (iOSPT6)";
+			sourceTree = "<group>";
+		};
+		CA5F65E9243D6CE3005D22D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA5F65EA243D6CED005D22D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA5F65D7243D6245005D22D5 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA5F65EB243D6CF4005D22D5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA5F65E5243D6B82005D22D5 /* ColorsTableViewController.swift */,
+				CA5F65E7243D6BE1005D22D5 /* ColorDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CA5F65EC243D6D36005D22D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA5F65D1243D6245005D22D5 /* AppDelegate.swift */,
+				CA5F65D3243D6245005D22D5 /* SceneDelegate.swift */,
+				CA5F65DA243D624E005D22D5 /* Assets.xcassets */,
+				CA5F65DC243D624E005D22D5 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA5F65D6243D6245005D22D5 /* ViewController.swift in Sources */,
 				CA5F65D2243D6245005D22D5 /* AppDelegate.swift in Sources */,
 				CA5F65D4243D6245005D22D5 /* SceneDelegate.swift in Sources */,
+				CA5F65E6243D6B82005D22D5 /* ColorsTableViewController.swift in Sources */,
+				CA5F65E8243D6BE2005D22D5 /* ColorDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
