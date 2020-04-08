@@ -9,22 +9,21 @@
 import UIKit
 
 class ColorDetailViewController: UIViewController {
+    
+    // This creates color object it be nil because we dont want this appear unles user tipes
+    var cellColor: Color?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       updateViews()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateViews() {
+        if let color = cellColor {
+            title = color.colorName
+            view.backgroundColor = color.color
+        }
     }
-    */
 
 }
